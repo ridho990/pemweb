@@ -196,12 +196,47 @@
                         <img src="../images/fibon-rekursif.png" alt="">
                     </div>
                 </section>
+                <section class="fibonacci-calc">
+                    <p class="dalam-fibonacci">Program Sederhana Fibonacci Dengan PHP</p>
+                    <form method="post">
+                        <input class="form" type="text" name="num1" value="" placeholder="Enter a number"/> </td>
+                        <input class= "button-submit" type="submit" name="submit" value="Submit"/> </td>
+                    </form>
+                        <?php
+                            function Fibonacci($number)
+                            {
+                                // if and else if to generate first two numbers
+                                if ($number == 0)
+                                    return 0;
+                                else if ($number == 1)
+                                    return 1;
+                                // Recursive Call to get the upcoming numbers
+                                else
+                                    return (Fibonacci($number-1) + Fibonacci($number-2));
+                            }
+
+                            if(isset($_POST['submit']))
+                            {
+                                $n = $_POST['num1'];
+                                echo '<p class = "series-of" >';
+                                echo "Hasil dari fibonacci $n adalah :"."";
+                                echo '</p>';
+                                echo '<div class="hasil-fibonacci">';
+                                for ($counter = 0; $counter < $n; $counter++)
+                                {
+                                    // echo Fibonacci($counter),'   ';
+                                    echo '<div class="number"> <p>' . Fibonacci($counter) . '</p></div>';
+                                }
+                                echo '</div>';
+                                return 0;
+                            }
+                        ?>
+                </section>
             </main>
         </div>
         <footer>
             <p>Mata Kuliah Pemrogramman Web</p>
         </footer>
-
         <script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
