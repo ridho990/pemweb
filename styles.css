@@ -10,7 +10,7 @@
 }
 
 body {
-	font-family: 'Poppins', sans-serif !important;
+	font-family: "Poppins", sans-serif !important;
 	/* font-family: 'Quicksand', sans-serif !important; */
 	color: #19191c;
 }
@@ -28,8 +28,8 @@ nav.navbar.navbar-expand-lg .container-fluid {
 	padding-right: 2rem;
 }
 
-nav.navbar.navbar-expand-lg .container-fluid a{
-	color: #FFF;
+nav.navbar.navbar-expand-lg .container-fluid a {
+	color: #fff;
 }
 
 .navbar {
@@ -194,9 +194,91 @@ pre {
 	padding-left: 1.2rem;
 }
 
+form {
+	margin-bottom: 1rem;
+}
+
+.form {
+	padding: 5px 10px;
+	border-radius: 5px;
+	outline: none;
+	border: 2px solid #495579;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.button-submit {
+	padding: 5px 10px;
+	outline: none;
+	border: 2px solid #495579;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.dalam-fibonacci {
+	font-size: 1.25rem !important;
+	font-weight: 500;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.fibonacci-calc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.hasil-fibonacci {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.hasil-fibonacci .number p {
+	margin-bottom: 0;
+}
+
+.number {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+	background-color: #495579;
+	color: #fff;
+	width: 3rem;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 footer {
 	background-color: #263159;
-	color: #FFF;
+	color: #fff;
 	text-align: center;
 	padding: 1.5rem;
 }
